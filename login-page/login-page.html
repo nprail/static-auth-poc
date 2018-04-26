@@ -1,0 +1,11 @@
+<div class="login-page">
+    <div class="form">
+        <h1>surge.sh</h1>
+        <form class="login-form" ng-submit="login()">
+            <input type="email" name="email" ng-model="email" placeholder="email" />
+            <input type="password" name="password" ng-model="password" placeholder="password" />
+            <input type="submit" value="login" class="button" />
+        </form>
+        <small ng-show="error">{{error}}</small>
+    </div>
+</div>
