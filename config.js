@@ -1,6 +1,6 @@
 // config is static since this is a proof of concept
 module.exports = {
-  site: 'https://static-auth-poc.surge.sh',
+  site: 'https://nprail.github.io/static-auth-poc',
   jwtSecret: 'demo',
   users: [
     {

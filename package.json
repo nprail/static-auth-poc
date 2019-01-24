@@ -24,8 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx concurrently --names 'PROXY,LOGIN' 'npm run start-proxy' 'npm run start-login'",
     "start-proxy": "node proxy-server",
-    "start-login": "node login-server",
-    "deploy-site": "surge site/"
+    "start-login": "node login-server"
   },
   "author": "Noah Prail <noah@prail.net>",
   "license": "UNLICENSED"
