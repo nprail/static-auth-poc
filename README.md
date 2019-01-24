@@ -1,12 +1,12 @@
-# Auth Demo
+# Static Site Auth (POC)
 
 ## Instructions
 
 Clone the repo.
 
 ```bash
-git clone git@github.com:nprail/auth-demo.git
-cd auth-demo
+git clone git@github.com:nprail/static-auth-poc.git
+cd static-auth-poc
 ```
 
 Install the dependencies.

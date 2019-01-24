@@ -1,6 +1,6 @@
-// config is static for demo purposes
+// config is static since this is a proof of concept
 module.exports = {
-  site: 'https://auth-demo.surge.sh',
+  site: 'https://static-auth-poc.surge.sh',
   jwtSecret: 'demo',
   users: [
     {
