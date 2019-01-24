@@ -19,12 +19,12 @@ app.use(cookieParser());
 // routes
 const requireAuth = async (req, res, next) => {
   try {
-    const token = req.cookies.Surge_Authorization;
+    const token = req.cookies.Site_Authorization;
     // check if there is a token
     if (token) {
       const jwtOpts = {
         issuer: config.login.url,
-        subject: config.surgeSite
+        subject: config.site
       };
       // verify the token
       const decoded = await jwt.verify(token, config.jwtSecret, jwtOpts);
@@ -47,7 +47,7 @@ const requireAuth = async (req, res, next) => {
 
 app.use(requireAuth);
 
-app.use("/", proxy(config.surgeSite));
+app.use("/", proxy(config.site));
 
 app.listen(config.proxy.port, () =>
   console.log(`Proxy server listening on port ${config.proxy.port}!`)

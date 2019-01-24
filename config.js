@@ -1,6 +1,6 @@
 // config is static for demo purposes
 module.exports = {
-  surgeSite: "https://surge-auth-demo.surge.sh",
+  site: "https://auth-demo.surge.sh",
   jwtSecret: "demo",
   users: [
     {

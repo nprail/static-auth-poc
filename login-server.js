@@ -53,14 +53,14 @@ app.post("/token", async (req, res) => {
     const jwtOpts = {
       expiresIn: "24h",
       issuer: config.login.url,
-      subject: config.surgeSite
+      subject: config.site
     };
 
     // sign the token
     const token = await jwt.sign(payload, config.jwtSecret, jwtOpts);
 
     // set the token in cookies
-    res.cookie("Surge_Authorization", token);
+    res.cookie("Site_Authorization", token);
 
     const state = {
       id: uuidv4(),
@@ -94,7 +94,7 @@ app.get("/authorized", async (req, res) => {
   }
 
   // set the token in cookies
-  res.cookie("Surge_Authorization", state.token);
+  res.cookie("Site_Authorization", state.token);
 
   return res.redirect(state.redirectUrl);
 });

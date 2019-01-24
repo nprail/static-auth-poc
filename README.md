@@ -1,12 +1,12 @@
-# Surge Auth Demo
+# Auth Demo
 
 ## Instructions
 
 Clone the repo.
 
 ```bash
-git clone git@github.com:nprail/surge-auth-demo.git
-cd surge-auth-demo
+git clone git@github.com:nprail/auth-demo.git
+cd auth-demo
 ```
 
 Install the dependencies.
@@ -23,18 +23,18 @@ npm start
 
 Browse to http://localhost:3000
 
-* **Username:** demo@example.com
-* **Password:** demo
+- **Username:** demo@example.com
+- **Password:** demo
 
 ## Components
 
 ### Proxy Server
 
-The proxy server simply proxies the Surge site and adds middleware that verifies that the token exists and is valid.
+The proxy server simply proxies the a site and adds middleware that verifies that the token exists and is valid.
 
 ### Login Server
 
-The login server hosts the login page and acts as the Surge login API.
+The login server hosts the login page and acts as the login API.
 
 ## Flow
 
