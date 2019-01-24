@@ -1,6 +1,6 @@
 // config is static since this is a proof of concept
 module.exports = {
-  site: 'https://nprail.github.io/static-auth-poc',
+  site: 'https://static-auth-poc.nprail.me/',
   jwtSecret: 'demo',
   users: [
     {
